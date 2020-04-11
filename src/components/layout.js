@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -7,6 +7,7 @@ import './layout.css';
 import Navbar from './Navbar';
 import * as MENU from '../constants/menu';
 import * as STRINGS from '../constants/strings';
+import Headroom from 'react-headroom';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,26 +21,22 @@ const Layout = ({ children }) => {
   `);
 
   return (
-    <>
-      <Navbar
-        title={STRINGS.TITLE}
-        menu={MENU}
-      />
+    <Fragment>
+      <Headroom>
+        <Navbar title={STRINGS.TITLE} menu={MENU.GROUPS} />
+      </Headroom>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          margin: `0`,
+          padding: `0`,
         }}
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Upper West Side Dermatology
         </footer>
       </div>
-    </>
+    </Fragment>
   );
 };
 

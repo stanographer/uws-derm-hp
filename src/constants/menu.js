@@ -1,132 +1,166 @@
-export const MENU = [
+export const GROUPS = [
     {
-        groupTitle: 'Our Practice',
+        title: 'Our Practice',
+        description: 'Mission: treat every patient with respect and compassion while delivering the best possible care.',
         subGroups: [
             {
-                subGroupTitle: 'Physicians',
-                subGroupLink: '/physicians',
+                title: 'Physicians',
+                link: '/physicians',
+                description: 'Learn about our highly qualified physicians.'
             },
             {
-                subGroupTitle: 'Patient Information',
-                subGroupLink: '/patient-information',
+                title: 'Patient Information',
+                link: '/patient-information',
+                description: 'How to get started.'
             },
             {
-                subGroupTitle: 'Insurances',
-                subGroupLink: '/insurances',
+                title: 'Insurances',
+                link: '/insurances',
+                description: 'We accept a variety of insurances.'
             },
             {
-                subGroupTitle: 'New Patient Forms',
-                subGroupLink: '/new-patient-forms',
+                title: 'New Patient Forms',
+                link: '/new-patient-forms',
+                description: 'Download intake forms here.'
             },
             {
-                subGroupTitle: 'Location & Hours',
-                subGroupLink: '/location-and-hours',
+                title: 'Location & Hours',
+                link: '/location-and-hours',
+                description: 'Email, call, or visit us.'
             },
         ]
     },
     {
-        groupTitle: 'Medical',
+        title: 'Medical',
+        description: 'We offer a variety of medical dermatological procedures.',
+        subtitle: 'Medical Dermatology',
         subGroups: [
             {
-                subGroupTitle: 'Acne',
-                subGroupLink: '/acne',
+                title: 'Acne',
+                link: '/acne',
+                description: 'Topical and surgical acne solutions.'
             },
             {
-                subGroupTitle: 'Eczema',
-                subGroupLink: '/eczema',
+                title: 'Eczema',
+                link: '/eczema',
+                description: 'Inflamed, itchy, red, cracked, and rough skin.'
             },
             {
-                subGroupTitle: 'Psoriasis',
-                subGroupLink: '/psoriasis',
+                title: 'Psoriasis',
+                link: '/psoriasis',
+                description: 'Skin cells build up and form scales and itchy, dry patches.'
             },
             {
-                subGroupTitle: 'Vitiligo',
-                subGroupLink: '/vitiligo',
+                title: 'Vitiligo',
+                link: '/vitiligo',
+                description: 'Here is a description about vitiligo'
             },
             {
-                subGroupTitle: 'Alopecia',
-                subGroupLink: '/alopecia',
+                title: 'Alopecia',
+                link: '/alopecia',
+                description: 'Here is a description about alopecia.'
             },
             {
-                subGroupTitle: 'Warts',
-                subGroupLink: '/warts',
+                title: 'Warts',
+                link: '/warts',
+                description: 'Something here about warts.'
             },
             {
-                subGroupTitle: 'Skin Cancer Screening',
-                subGroupLink: '/skin-cancer-screening',
+                title: 'Skin Cancer Screening',
+                link: '/skin-cancer-screening',
+                description: 'Latest cancer screening techniques.'
             },
             {
-                subGroupTitle: 'Rosacea',
-                subGroupLink: '/rosacea',
+                title: 'Rosacea',
+                link: '/rosacea',
+                description: 'Stuff about rosacea.'
             },
             {
-                subGroupTitle: 'Moles',
-                subGroupLink: '/moles',
+                title: 'Moles',
+                link: '/moles',
+                description: 'Something about moles here.'
             },
             {
-                subGroupTitle: 'Phototherapy NB-UVB',
-                subGroupLink: '/phototherapy',
+                title: 'Phototherapy NB-UVB',
+                link: '/phototherapy',
+                description: 'Revolutionary treatment.'
             },
             {
-                subGroupTitle: 'PDT - Blue & Red Light Treatment',
-                subGroupLink: '/pdt',
+                title: 'PDT - Blue & Red Light Treatment',
+                link: '/pdt',
+                description: 'Sounds really fancy.'
             },
         ]
     },
     {
-        groupTitle: 'Cosmetic',
+        title: 'Cosmetic',
+        description: 'We offer a variety of cosmetic dermatological procedures.',
+        subtitle: 'Cosmetic Dermatology',
         subGroups: [
             {
-                subGroupTitle: 'Laser treatments - IPL',
-                subGroupLink: '/laser-treatments',
+                title: 'Laser treatments - IPL',
+                link: '/laser-treatments',
+                description: 'We have the most advanced in laser treatment.'
             },
             {
-                subGroupTitle: 'Laser Hair Removal',
-                subGroupLink: '/laser-hair-removal',
+                title: 'Laser Hair Removal',
+                link: '/laser-hair-removal',
+                description: 'Remove all that gross hair and get yourself a man.'
             },
             {
-                subGroupTitle: 'Botox',
-                subGroupLink: '/botox',
+                title: 'Botox',
+                link: '/botox',
+                description: 'Makes it impossible for you to show emotion on your face.'
             },
             {
-                subGroupTitle: 'Fillers',
-                subGroupLink: '/fillers',
+                title: 'Fillers',
+                link: '/fillers',
+                description: 'Fill in those wrinkles!'
             },
             {
-                subGroupTitle: 'Body Contouring & Sculpting',
-                subGroupLink: '/body-contouring-and-sculpting',
+                title: 'Body Contouring & Sculpting',
+                link: '/body-contouring-and-sculpting',
+                description: 'Something about body conturing here.'
             },
             {
-                subGroupTitle: 'Microneedling',
-                subGroupLink: '/microneedling',
+                title: 'Microneedling',
+                link: '/microneedling',
+                description: 'Got scars? Microneedling may be the answer for you.'
             },
             {
-                subGroupTitle: 'PRP',
-                subGroupLink: '/prp',
+                title: 'PRP',
+                link: '/prp',
+                description: 'I don\'t even know what this is'
             },
             {
-                subGroupTitle: 'Acne Scars',
-                subGroupLink: '/acne-scars',
+                title: 'Acne Scars',
+                link: '/acne-scars',
+                description: 'Let\'s annihilate those scars.'
             },
             {
-                subGroupTitle: 'Sculptra',
-                subGroupLink: '/sculptra',
+                title: 'Sculptra',
+                link: '/sculptra',
+                description: 'Another thing I do not know.'
             },
             {
-                subGroupTitle: 'Kybella',
-                subGroupLink: '/kybella',
+                title: 'Kybella',
+                link: '/kybella',
+                description: 'Probably an advanced filler of some type.'
             },
             {
-                subGroupTitle: 'Nova Threads',
-                subGroupLink: '/nova-threads',
+                title: 'Nova Threads',
+                link: '/nova-threads',
+                description: 'No clue what this is.'
             },
             {
-                subGroupTitle: 'Chemical Peels',
-                subGroupLink: '/chemical-peels',
+                title: 'Chemical Peels',
+                link: '/chemical-peels',
+                description: 'Don\'t ever put anything higher than 30% on your face unless you want it to melt.'
             },
             {
-                subGroupTitle: 'Facials',
-                subGroupLink: '/facials',
+                title: 'Facials',
+                link: '/facials',
+                description: 'I could use one of these right now.'
             },
         ],
     },

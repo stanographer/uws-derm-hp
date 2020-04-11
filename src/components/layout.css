@@ -2,29 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,400i,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 
 .hoverable {
-    position: static;
+  position: static;
 }
 
 .hoverable > a:after {
-    content: "\25BC";
-    font-size: 10px;
-    padding-left: 6px;
-    position: relative;
-    top: -1px;
+  content: '\25BC';
+  font-size: 8px;
+  padding-left: 10px;
+  position: relative;
+  top: -1px;
 }
 
 .hoverable:hover .mega-menu {
-    display: block;
+  display: block;
 }
 
 .mega-menu {
-    display: none;
-    left: 0;
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    z-index: 3;
+  display: none;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  z-index: 3;
 }
