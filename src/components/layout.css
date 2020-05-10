@@ -4,6 +4,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Work+Sans:wght@300;400;500&display=swap');
 
+.fade {
+  position: relative;
+  overflow: hidden;
+  height: 9rem;
+}
+
+.fade:after {
+  content: '';
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 1.2rem;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgb(242, 242, 242) 50%
+  );
+}
+
 .hoverable {
   position: static;
 }
@@ -20,6 +41,10 @@
   display: block;
 }
 
+.onHover {
+  display: block;
+}
+
 .mega-menu {
   display: none;
   left: 0;
@@ -27,4 +52,9 @@
   text-align: left;
   width: 100%;
   z-index: 3;
+}
+
+.profileImage {
+  max-height: 380px;
+  overflow: hidden;
 }

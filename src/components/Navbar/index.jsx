@@ -1,19 +1,26 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import { Link } from 'gatsby';
 
 const Navbar = ({ title, menu }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   const MenuItems = () => {
     return (
       <Fragment>
         {menu.map(group => (
-          <li className="hoverable hover:bg-lightPink font-workSans">
+          <li className="hoverable hover:bg-lightPink font-workSans"
+            onTouchMove={toggleMenu}
+            onClick={() => toggleMenu()}
+            // onMouseLeave={e => setMenuOpen(false)}
+          >
             <Link
               to="#"
-              className="relative block py-6 px-6 lg:p-6 text-sm lg:text-base font-bold hover:bg-lightPink"
+              className="relative block p-4 lg:p-6 text-sm lg:text-base font-bold hover:bg-lightPink"
             >
               {group.title}
             </Link>
-            <div className="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-lightPink border-gray-500 border-b">
+            <div className={menuOpen ? `p-6 mega-menu onHover mb-16 sm:mb-0 bg-lightPink border-darkerGray border-b` : `p-6 mega-menu mb-16 sm:mb-0 bg-lightPink border-darkerGray border-b`}>
               <div className="container mx-auto w-full flex flex-wrap justify-start mx-2">
                 <div className="w-full text-white mb-8">
                   <h2 className="font-bold text-black text-3xl">
@@ -33,7 +40,7 @@ const Navbar = ({ title, menu }) => {
                         {subGroup.description}
                       </p>
                     </ul>
-                  ))}
+                  ), this)}
                 </Fragment>
               </div>
             </div>
@@ -44,7 +51,7 @@ const Navbar = ({ title, menu }) => {
   };
 
   return (
-    <nav className="relative bg-white border-b border-gray-500 text-gray-900 shadow-md">
+    <nav className="relative bg-white border-b border-darkerGray text-gray-900">
       <div className="mx-auto flex justify-center bg-gray-800">
         <div className="relative block p-2 text-xl text-white font-workSans font-light">
           <h1 className="tracking-wider">{title}</h1>
